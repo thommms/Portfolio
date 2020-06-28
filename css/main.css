@@ -55,7 +55,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("/img/cartoon_thor.jpg");
+      background: url("../img_b/cartoon_thor.jpg");
       border-radius: 50%;
       border: solid 3px green; }
   .menu .nav-item {
@@ -70,7 +70,7 @@
     position: relative;
     font-size: 30px;
     text-transform: uppercase;
-    padding: 1rem,0;
+    padding: 1rem, 0;
     font-weight: 300;
     color: #fff;
     text-decoration: none;
