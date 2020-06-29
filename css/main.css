@@ -119,16 +119,6 @@ h2,
 h3 {
   margin: 0;
   font-weight: 400; }
-  h1.lg-heading,
-  h2.lg-heading,
-  h3.lg-heading {
-    font-size: 3rem; }
-  h1.sm-heading,
-  h2.sm-heading,
-  h3.sm-heading {
-    margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
 
 a {
   color: #fff;
@@ -170,8 +160,7 @@ main {
     border-radius: 60%;
     border: green 5px solid; }
   .about-info .bio {
-    grid-area: bio;
-    font-size: 1.1rem; }
+    grid-area: bio; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
@@ -182,8 +171,7 @@ main {
     background: #515151;
     padding: 0.4rem;
     border-bottom: green 5px solid;
-    text-align: left;
-    font-size: 0.95rem; }
+    text-align: left; }
 
 .projects {
   display: grid;
@@ -251,13 +239,37 @@ main {
   .projects {
     grid-template-columns: repeat(4, 1fr); }
   .boxes {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .bio {
+    text-align: left;
+    font-size: 1.3rem; }
+  .job {
+    font-size: 1rem; }
+  .lg-heading {
+    font-size: 3rem; }
+  .sm-heading {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(73, 73, 73, 0.5); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
     grid-template-columns: repeat(3, 1fr); }
   .boxes {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .bio {
+    text-align: left;
+    font-size: 1.1rem; }
+  .job {
+    font-size: 0.95rem; }
+  .lg-heading {
+    font-size: 3rem; }
+  .sm-heading {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(73, 73, 73, 0.5); } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -291,7 +303,19 @@ main {
   .projects {
     grid-template-columns: repeat(2, 1fr); }
   .boxes {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .bio {
+    text-align: left;
+    font-size: 1.1rem; }
+  .job {
+    font-size: 0.95rem; }
+  .lg-heading {
+    font-size: 2.5rem; }
+  .sm-heading {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(73, 73, 73, 0.5); } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
@@ -301,4 +325,14 @@ main {
   .boxes {
     grid-template-columns: repeat(1, 1fr); }
   .bio {
-    text-align: left; } }
+    text-align: left;
+    font-size: 1rem; }
+  .job {
+    font-size: 0.9rem; }
+  .lg-heading {
+    font-size: 2rem; }
+  .sm-heading {
+    margin-bottom: 1.1rem;
+    font-size: 1.2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(73, 73, 73, 0.5); } }
