@@ -118,7 +118,7 @@ h1,
 h2,
 h3 {
   margin: 0;
-  font-weight: 400; }
+  font-weight: 500; }
 
 a {
   color: #fff;
@@ -135,17 +135,11 @@ header {
 main {
   padding: 0.4em;
   min-height: calc(100vh -40px); }
-  main .icons {
-    margin-top: 1rem; }
-    main .icons a {
-      padding: 0.4rem; }
-      main .icons a:hover {
-        color: green;
-        transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
     main#home h1 {
-      margin-top: 20vh; }
+      margin-top: 40vh;
+      font-size: 2.5rem; }
 
 .about-info {
   display: grid;
@@ -190,16 +184,19 @@ main {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 1rem; }
+  margin-top: 3rem;
+  margin: 0.1rem;
+  position: relative; }
   .boxes div {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     border: 3px #fff solid;
     padding: 1.5rem 2rem;
     margin-bottom: 2rem;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
-      padding: 0.5rem 1.5rem;
+      padding: 1.7rem 2.1rem;
       background: green;
+      margin-bottom: 2rem;
       color: #fff; }
       .boxes div:hover span {
         color: color=#fff; }
@@ -236,6 +233,18 @@ main {
   font-size: 20px; }
 
 @media screen and (min-width: 1171px) {
+  main#home h1, h2 {
+    margin-left: 20vh; }
+  main#home h1 {
+    font-size: 5rem; }
+  .icons {
+    margin-top: 1rem;
+    margin-left: 20vh; }
+    .icons a {
+      padding: 0.4rem; }
+      .icons a:hover {
+        color: green;
+        transition: all 0.5s ease-out; }
   .projects {
     grid-template-columns: repeat(4, 1fr); }
   .boxes {
@@ -254,6 +263,18 @@ main {
     background: rgba(73, 73, 73, 0.5); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
+  main#home h1, h2 {
+    margin-left: 10vh; }
+  main#home h1 {
+    font-size: 4rem; }
+  .icons {
+    margin-top: 1rem;
+    margin-left: 10vh; }
+    .icons a {
+      padding: 0.4rem; }
+      .icons a:hover {
+        color: green;
+        transition: all 0.5s ease-out; }
   .projects {
     grid-template-columns: repeat(3, 1fr); }
   .boxes {
@@ -272,6 +293,8 @@ main {
     background: rgba(73, 73, 73, 0.5); } }
 
 @media screen and (max-width: 768px) {
+  main#home h1 {
+    font-size: 3rem; }
   main {
     align-items: center;
     text-align: center; }
@@ -319,11 +342,11 @@ main {
 
 @media screen and (max-width: 500px) {
   main#home h1 {
-    margin-top: 10vh; }
+    margin-top: 30vh; }
   .projects {
     grid-template-columns: 1fr; }
   .boxes {
-    grid-template-columns: repeat(1, 1fr); }
+    grid-template-columns: 1fr; }
   .bio {
     text-align: left;
     font-size: 1rem; }
@@ -335,4 +358,11 @@ main {
     margin-bottom: 1.1rem;
     font-size: 1.2rem;
     padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); } }
+    background: rgba(73, 73, 73, 0.5); }
+  .icons {
+    margin-top: 1rem; }
+    .icons a {
+      padding: 0.4rem; }
+      .icons a:hover {
+        color: green;
+        transition: all 0.5s ease-out; } }
